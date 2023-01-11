@@ -1,0 +1,16 @@
+<div class="board">
+  <ng-container *ngFor="let row of field">
+    <div
+      class="position"
+      *ngFor="let position of row"
+      [attr.data-row]="position.y"
+      [attr.data-col]="position.x"
+      [class.position--body]="position.body"
+    ></div>
+  </ng-container>
+</div>
+<!-- <pre>{{ snakeHead | json }}</pre> -->
+<!-- <div class="checkpoints">
+  <pre *ngFor="let c of checkpoints">{{ c | json }}</pre>
+</div> -->
+<!-- <pre *ngFor="let body of bodies">{{ body | json }}</pre> -->

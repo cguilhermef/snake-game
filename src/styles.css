@@ -1,0 +1,12 @@
+/* Add application styles & imports to this file! */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}

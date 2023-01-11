@@ -1,0 +1,26 @@
+:host {
+  --size: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(20, var(--size));
+}
+
+.position {
+  display: flex;
+  flex: 0 0 auto;
+  border: 1px solid #c0c0c0;
+  font-size: 10px;
+  height: var(--size);
+  overflow: hidden;
+  width: var(--size);
+}
+
+.position--body {
+  background-color: rgba(0, 0, 0, 0.6);
+}
